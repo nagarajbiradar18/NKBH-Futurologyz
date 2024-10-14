@@ -73,24 +73,25 @@ const Driver = () => {
     }
 
     const fetchJson = () => {
-        fetch('/data.json'
-            ,{
-              headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-               }
-            }
-            )
-              .then(function(response){
-                // console.log(response)
-                return response.json();
-              })
-              .then(function(myJson) {
-                console.log("myJson", myJson);
-                // setData(myJson)
-                setCharacteristics(myJson)
-debugger;
-              });
+
+            try {
+                fetch('/data.json', {
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                  }
+                })
+                  .then((response) => {
+                    return response.json();
+                  })
+                  .then((myJson) => {
+                    console.log("myJson", myJson);
+                    setCharacteristics(myJson);
+                  });
+              } catch (error) {
+                console.log('That did not go well.');
+                console.error(error);
+              }
       }
       useEffect(() => {
         fetchJson()
