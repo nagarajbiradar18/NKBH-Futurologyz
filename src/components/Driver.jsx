@@ -1,12 +1,17 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+
+
 
 const Driver = () => {
+
+    const [data, setData] = useState([]);
+
     const dateRef = useRef();
     const numberRef = useRef();
     const [driver, setDriver] = useState('');
     const [conductor, setConductor] = useState('');
     const [fullDateStr, setFullDateStr] = useState('');
-
+    const [characteristics, setCharacteristics] = useState({})
     const [numberSum, setNumberSum] = useState(0);
     const [fullNumberSum, setFullNumberSum] = useState(0);
 
@@ -66,13 +71,38 @@ const Driver = () => {
         // Recursively call digital_root with the sum until it's a single-digit number
         return digital_root(sum);
     }
+
+    const fetchJson = () => {
+        fetch('/data.json'
+            ,{
+              headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+               }
+            }
+            )
+              .then(function(response){
+                // console.log(response)
+                return response.json();
+              })
+              .then(function(myJson) {
+                console.log("myJson", myJson);
+                // setData(myJson)
+                setCharacteristics(myJson)
+debugger;
+              });
+      }
+      useEffect(() => {
+        fetchJson()
+      },[])
+
     return (
         <div>
 
 
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col-3">
                         <div className="container">
                             <form action="">
                                 <div className="mb-3">
@@ -85,7 +115,37 @@ const Driver = () => {
 
                         </div>
                     </div>
+                    <div className="col-9">
+                        <div className="container">
+                        { driver ? <div>
+                           <div> 
+                           <table class="table table-success table-striped">
+                            <thead> 
+                                <tr>
+                                    <th>Interpretation</th>
+                                    <th>Strength</th>
+                                </tr>
+                                </thead> 
+                                <tbody>
+                                <tr>
+                                    <td><div>{characteristics && characteristics.interpretation && characteristics.interpretation[driver-1][`${driver}`][conductor-1]['desc']}</div></td>
+                                    <td><div>{characteristics && characteristics.interpretation && characteristics.interpretation[driver-1][`${driver}`][conductor-1]['star']}</div></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
 
+                            
+                            
+                            <div><strong>Characteristics</strong></div>
+                            
+                            <div><strong>{`Driver ${driver} : ` }</strong> { driver && characteristics.characteristics && characteristics.characteristics[driver-1]['desc']}</div>
+                            <div><strong>{`Conductor ${conductor} : ` }</strong> { conductor && characteristics.characteristics && characteristics.characteristics[conductor-1]['desc']}</div>
+                            </div>:''}
+                            
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
