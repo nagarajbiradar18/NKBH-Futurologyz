@@ -10,7 +10,7 @@ function App() {
   return (
     <>
 
-      <nav class="navbar navbar-expand-sm bg-success navbar-dark text-center">
+      <nav className="navbar navbar-expand-sm bg-success navbar-dark text-center">
         <h5 className="app-header  ">NKBH Futurologyz</h5>
       </nav>
       <br />
