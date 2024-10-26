@@ -111,8 +111,8 @@ const Driver = () => {
                                     <input className="form-control" type="date" ref={dateRef} onChange={dateChangeHandler}></input>
                                 </div>
                             </form>
-                            {driver && <h2>Driver {driver}</h2>}
-                            {conductor && <h2>Conductor  : {fullDateStr} : {conductor}</h2>}
+                            {driver && <h4>D : {driver}</h4>}
+                            {conductor && <h4>C : {fullDateStr} : {conductor}</h4>}
 
                         </div>
                     </div>
