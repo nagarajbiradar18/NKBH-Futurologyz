@@ -1,5 +1,15 @@
 import { useRef, useState, useEffect } from "react";
+import ReactStars from "react-rating-stars-component";
 
+const firstExample = {
+    size: 30,
+    value: 2.5,
+    edit: false,
+    isHalf: true,
+    color: '#adb5bd',
+    activeColor: "#198754",
+    char: "",
+  };
 
 
 const Driver = () => {
@@ -14,13 +24,14 @@ const Driver = () => {
     const [characteristics, setCharacteristics] = useState({})
     const [numberSum, setNumberSum] = useState(0);
     const [fullNumberSum, setFullNumberSum] = useState(0);
+    const [ratingValue, setRatingValue] = useState({})
 
 
     const dateChangeHandler = (event) => {
 
         //console.log(event.target.value);
         //console.log(dateRef.current.value);
-        console.log(new Date(dateRef.current.value));
+        // console.log(new Date(dateRef.current.value));
         let date = new Date(dateRef.current.value);
         // console.log(date.getDate(), date.getMonth(), date.getFullYear())
         // console.log("getDate", date.getDate());
@@ -41,12 +52,12 @@ const Driver = () => {
 
 
     const numberChangeHandler = (event) => {
-        console.log(numberRef.current.value);
+       // console.log(numberRef.current.value);
         let numberStr = (numberRef.current.value).replace(/[^0-9]/g, '');
         setFullNumberSum(sumOfDigit(numberStr));
         setNumberSum(digital_root(numberStr));
-        console.log("sumOfDigit", sumOfDigit(numberStr));
-        console.log("digital_root", digital_root(numberStr));
+       // console.log("sumOfDigit", sumOfDigit(numberStr));
+       // console.log("digital_root", digital_root(numberStr));
     }
 
     const sumOfDigit = (num) => {
@@ -85,7 +96,7 @@ const Driver = () => {
                     return response.json();
                   })
                   .then((myJson) => {
-                    console.log("myJson", myJson);
+                    //console.log("myJson", myJson);
                     setCharacteristics(myJson);
                   });
               } catch (error) {
@@ -96,6 +107,20 @@ const Driver = () => {
       useEffect(() => {
         fetchJson()
       },[])
+
+      useEffect(() => {
+        if (driver && conductor) {
+          setRatingValue((prevRatingValue) => {
+            const newValue = characteristics.interpretation[driver - 1][driver][conductor - 1]['star'];
+            console.log({ ...prevRatingValue, value: newValue }, "Updated rating value"); // Log updated value here
+            return { ...prevRatingValue, value: newValue };
+          });
+        }
+      }, [driver, conductor, characteristics]);
+
+      useEffect(() => {
+        console.log("Updated ratingValue:", ratingValue);
+      }, [ratingValue]);
 
     return (
         <div>
@@ -120,17 +145,19 @@ const Driver = () => {
                         <div className="container">
                         { driver ? <div>
                            <div> 
-                           <table class="table table-success table-striped">
+                           <table className="table table-success table-striped">
                             <thead> 
                                 <tr>
                                     <th>Interpretation</th>
                                     <th>Strength</th>
+                                    {/* <th>Rating</th> */}
                                 </tr>
                                 </thead> 
                                 <tbody>
                                 <tr>
                                     <td><div>{characteristics && characteristics.interpretation && characteristics.interpretation[driver-1][`${driver}`][conductor-1]['desc']}</div></td>
-                                    <td><div>{characteristics && characteristics.interpretation && characteristics.interpretation[driver-1][`${driver}`][conductor-1]['star']}</div></td>
+                                    {/* <td><div>{characteristics && characteristics.interpretation && characteristics.interpretation[driver-1][`${driver}`][conductor-1]['star']}</div></td> */}
+                                    <td><ReactStars key={ratingValue.value} {...firstExample} value={ratingValue.value} /><span>{ratingValue.value}</span></td>
                                 </tr>
                                 </tbody>
                             </table>

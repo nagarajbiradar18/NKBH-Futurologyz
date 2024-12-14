@@ -35,7 +35,7 @@ function App() {
             <div className="card-text">
               <City />
             </div>
-            {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+            {/* <a href="#" ="btn btn-primary">Go somewhere</a> */}
           </div>
         </div>
 
