@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import Mahadasha from './Mahadasha';
 import ReactStars from "react-rating-stars-component";
 
 const firstExample = {
@@ -24,7 +25,8 @@ const Driver = () => {
     const [characteristics, setCharacteristics] = useState({})
     const [numberSum, setNumberSum] = useState(0);
     const [fullNumberSum, setFullNumberSum] = useState(0);
-    const [ratingValue, setRatingValue] = useState({})
+    const [ratingValue, setRatingValue] = useState({});
+    const [birthYear, setBirthYear] = useState(0);
 
 
     const dateChangeHandler = (event) => {
@@ -40,6 +42,7 @@ const Driver = () => {
         const day = (date.getDate()).toString();
         const month = (date.getMonth() + 1).toString();
         const year = (date.getFullYear()).toString();
+        setBirthYear(year);
         // console.log(day, month, year)
         setDriver(digital_root(day))
         setConductor(digital_root(day + month + year));
@@ -175,6 +178,10 @@ const Driver = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="card">
+                <Mahadasha propsY={birthYear} propsD={driver}/>
             </div>
 
         </div>
