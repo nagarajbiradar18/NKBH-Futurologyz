@@ -1,0 +1,483 @@
+{
+   "characteristics": [
+     {
+      "id":1,
+       "desc": "Ruler Sun so creation, life giving, intellectual, leaders, authoritative, genius, brilliance, egoistic,impulsiveness, self-centered, analytical, initiator. King like, authoritative, pioneers, royal, trend setters, leadership, ego, creative, stubborn, selfish. Don’t fear thinking big, make big plans & investments."
+     },
+     {
+      "id":2,
+       "desc": "Ruler Moon so peace, emotional, feminine in nature, inquisitive, intuitive and research oriented. Diplomacy, secrecy, deceit, intelligence, uniqueness and inner wisdom. Can bring revolutionary ideas and find peace if they can balance their passion with their purpose. Think from heart and not head. Emotional dis-balance. Gentle, slow, sensitive, attractive, intuitive, mood swing."
+     },
+     {
+      "id":3,
+       "desc": "Hardworking, full of zeal, sincere and honest. Artistic, creative, happy- go-lucky attitude & strong desire for peace. Honor, respect & self esteem is their biggest possession. Confident, brilliant, romantic and luckiest of all numbers. Imaginative, healer, preacher, spiritual, relegious, counsellor, wise."
+     },
+     {
+      "id":4,
+       "desc": "Ruler Uranus or Rahu so orderly shows hard work, practical, argumentative and determined. They are logical and scientific. Disciplined, organized, short-tempered, rebellious, abusive, stubborn, logical, impulsive, energetic, serious, down to earth, faithful, honest and Determined. Devoted partner but sometimes does not understand the emotions of others. They are great reformers but struggle hard to earn a living. They are revolutionaries and shrewd and can be successful in business and politics."
+     },
+     {
+      "id":5,
+       "desc": "Ruler Mercury so energy, versatility, co-operation, intuitive. They love freedom & change. They know how to balance yourself. Enthusiastic and eager for acquiring knowledge. They come up with such ideas which are ahead of generations. They have calculative mind, fun loving, curious, versatile, flexible and accommodating. Either will keep working or will get work done from others. Happy go lucky, lazy, dark horse, entertaining, communicative."
+     },
+     {
+      "id":6,
+       "desc": "Love, affection, peace, harmony, strong memory, artistic, romantic, communicator, manipulative, diplomatic, family-oriented, shrewd. The failure, struggles and delays force them to turn the obstacles around. They are entertainers, artists, creators and enjoy beauty. Represents accumulation of wealth for an accomplished life. "
+     },
+     {
+      "id":7,
+       "desc": "They are researchers, introvert, philosophical, emotional, relegious, occult, spiritual, low in confidence, inquisitive, very good healer. Inclined for mystic sciences, meditation & perfection. They are restless and have reserved and conservative nature. They earn by hard work and perseverance. Great observers and have very good imagination ability."
+     },
+     {
+      "id":8,
+       "desc": "Ruler Saturn and they have great mental strength, result oriented and ambitious. Born leaders and possess executive or organizational skills. Though they are systematic but delay, laziness and lethargies is their biggest enemy. Struggle, laborious, hardwork, logical, argumentative, stubborn, law, finance."
+     },
+     {
+      "id":9,
+       "desc": "Ruler Mars so selfless, forgiveness, charitable and generous. They are fighters and have to face, lot of struggles. They are adventurous, aggressive & courageous. They are quarrelsome & have a fiery nature. They have to face lot of struggles and delays in life. If they do something that benefits the social cause then they get rewarded. Thinkers, planners, mentally strong, Unpredictable behaviour, warrior, rough n tough, good humanitarian, egoistic."
+     }
+   ],
+   "interpretation": [
+     {
+       "1": [
+         {
+           "id": 1,
+           "desc": " Fortune's favourite, Can be succesful in any business",
+           "star": 4
+         },
+         {
+           "id": 2,
+           "desc": " Succesfull in water related work - Navy, Liquid",
+           "star": 3.5
+         },
+         {
+           "id": 3,
+           "desc": " Education, Training, Occult science",
+           "star": 3.5
+         },
+         {
+           "id": 4,
+           "desc": " Good for politics and business",
+           "star": 3
+         },
+         {
+           "id": 5,
+           "desc": " Good for Banking and financial sector",
+           "star": 4
+         },
+         {
+           "id": 6,
+           "desc": " Luxury, Glamour, Tours & Travels, Good entertainers",
+           "star": 3.5
+         },
+         {
+           "id": 7,
+           "desc": " Best for Education, Research and Occult Science - Healers",
+           "star": 3
+         },
+         {
+           "id": 8,
+           "desc": " Struggle - Health or Finance or Marriage. Success in Law, Politics, Police Dept and any business",
+           "star": "NA"
+         },
+         {
+           "id": 9,
+           "desc": " Super successful. Great hidden potential, Army, Police and any humanitarian field is good",
+           "star": 5
+         }
+       ]
+     },
+     {
+       "2": [
+         {
+           "id": 1,
+           "desc": " Any type of business will give success",
+           "star": 3.5
+         },
+         {
+           "id": 2,
+           "desc": " Can't do multitasking. Good sectors for business are Water and Milk. Navy",
+           "star": 2
+         },
+         {
+           "id": 3,
+           "desc": " Education, Teaching, Healing, Occult Science",
+           "star": 2.5
+         },
+         {
+           "id": 4,
+           "desc": " Struggle, Depression",
+           "star": 1.5
+         },
+         {
+           "id": 5,
+           "desc": " Best or Property, Real estate, Banking and Finance sector",
+           "star": 3
+         },
+         {
+           "id": 6,
+           "desc": " Sweets business, Milk related, Media and Luxury related businesses",
+           "star": 2.5
+         },
+         {
+           "id": 7,
+           "desc": " Intuition is good in such people, Occult and Teaching / Research will give more success",
+           "star": 2.5
+         },
+         {
+           "id": 8,
+           "desc": " Struggle / Health issue",
+           "star": "NA"
+         },
+         {
+           "id": 9,
+           "desc": " Not successful in married life (Flickering Mind - Non stable). Liquid business or creativity will give more success",
+           "star": 1.5
+         }
+       ]
+     },
+     {
+       "3": [
+         {
+           "id": 1,
+           "desc": "Education, Healing, Politics, Doctor, Administrative job, Occult",
+           "star": 3.5
+         },
+         {
+           "id": 2,
+           "desc": "Education, water related work, liquid, Navy",
+           "star": 2.5
+         },
+         {
+           "id": 3,
+           "desc": "Multitasking will give less success. Studies related sector may give success",
+           "star": 3.5
+         },
+         {
+           "id": 4,
+           "desc": "Sales and Marketing, Judiciaries",
+           "star": 2.5
+         },
+         {
+           "id": 5,
+           "desc": "Media related work - Excellent Communication - Voice, Singer, Anchoring/ News reading, Behind camera performer, Teaching, Banking",
+           "star": 3
+         },
+         {
+           "id": 6,
+           "desc": "Marriage Problem, Health Problem. Good sector for success is luxury and wealth",
+           "star": "NA"
+         },
+         {
+           "id": 7,
+           "desc": "Highly knowledgeable, wisdom, education, PhD, Occult Science will give high success",
+           "star": 4
+         },
+         {
+           "id": 8,
+           "desc": "Law sector, Printing, Sales and Education will give more success",
+           "star": 2
+         },
+         {
+           "id": 9,
+           "desc": "IAS, Doctor, Army, Police and Administration related sector will give good success",
+           "star": 2
+         }
+       ]
+     },
+     {
+       "4": [
+         {
+           "id": 1,
+           "desc": "Politics. Any type business is good",
+           "star": 3.5
+         },
+         {
+           "id": 2,
+           "desc": "Depression / Struggle. Liquid related business can be good",
+           "star": 2
+         },
+         {
+           "id": 3,
+           "desc": "Education, sales, marketing, Occult Science business will give more success",
+           "star": 2.5
+         },
+         {
+           "id": 4,
+           "desc": "Struggle. Sales, Marketing and Law sector will give more success",
+           "star": 1.5
+         },
+         {
+           "id": 5,
+           "desc": "Media, Event management, Law, Financial and Banking sector will give good success",
+           "star": 3
+         },
+         {
+           "id": 6,
+           "desc": "Law, Media, Luxury, Glamour and liquor related business will give more success",
+           "star": 3
+         },
+         {
+           "id": 7,
+           "desc": "Delayed Success. Occult and Teaching are good for success",
+           "star": 4
+         },
+         {
+           "id": 8,
+           "desc": "Delayed Success. May struggle. Army, Police, Business, law related sectors can bring success",
+           "star": 1
+         },
+         {
+           "id": 9,
+           "desc": "More Ego. Struggle / Health / Problems / Surgeries / Accidents. Good sectors are Army, Police, Law",
+           "star": 1
+         }
+       ]
+     },
+     {
+       "5": [
+         {
+           "id": 1,
+           "desc": "Successful. Banking, Finance, Property will bring more success. They are having good communication skills",
+           "star": 4
+         },
+         {
+           "id": 2,
+           "desc": "Invest in real estate, work related to properties or liquid business will give more success",
+           "star": 3.5
+         },
+         {
+           "id": 3,
+           "desc": "Communications, Banking, Education and Media sector will give more success. Occult",
+           "star": 3.5
+         },
+         {
+           "id": 4,
+           "desc": "Delayed Success. Any business is good but preferable are Banking, Finance and Communications",
+           "star": 3
+         },
+         {
+           "id": 5,
+           "desc": "Very successful, Romantic, Self-accountable, Self-responsible they succeed in Banking and Finance sector. (They have been seen lazy and fat)",
+           "star": 4
+         },
+         {
+           "id": 6,
+           "desc": "Very Successful Life. Balanced & luxury. Succeed in Media, Luxury, tours & travels, hotel industries & liquor related business",
+           "star": 4.5
+         },
+         {
+           "id": 7,
+           "desc": "Education, Banking, Occult science",
+           "star": 3
+         },
+         {
+           "id": 8,
+           "desc": "Real estate. They tend to have good properties",
+           "star": 3
+         },
+         {
+           "id": 9,
+           "desc": "Successful. Administration, Banking & Teaching sector",
+           "star": 3
+         }
+       ]
+     },
+     {
+       "6": [
+         {
+           "id": 1,
+           "desc": "Media, Luxury, Glamour, Politics, liquors related businesses",
+           "star": 3.5
+         },
+         {
+           "id": 2,
+           "desc": "Sweets business, Milk related, Media & Luxury related businesses",
+           "star": 2.5
+         },
+         {
+           "id": 3,
+           "desc": "Health and Marriage issues. They will succeed in Luxury, gaming & education related sectors",
+           "star": "NA"
+         },
+         {
+           "id": 4,
+           "desc": "Successful. Media, law, luxury and glamour",
+           "star": 3
+         },
+         {
+           "id": 5,
+           "desc": "Super Successful. Media, Liquor (Pub, Casino) related business",
+           "star": 4.5
+         },
+         {
+           "id": 6,
+           "desc": "Super successful in Media, Modelling, Film Industry. Tours & Travels",
+           "star": 4
+         },
+         {
+           "id": 7,
+           "desc": "Successful, Sports, Romantic",
+           "star": 3.5
+         },
+         {
+           "id": 8,
+           "desc": "Law sector",
+           "star": 3
+         },
+         {
+           "id": 9,
+           "desc": "Money, Success, Glamour, luxury and Army. Marriage problem, delayed marriage",
+           "star": 3
+         }
+       ]
+     },
+     {
+       "7": [
+         {
+           "id": 1,
+           "desc": "Occult Science related sector",
+           "star": 3
+         },
+         {
+           "id": 2,
+           "desc": "Good intuition, occult science, astrology",
+           "star": 2
+         },
+         {
+           "id": 3,
+           "desc": "Wisdom & Knowledge. Doctor, IAS, Administration, Occult & Teaching sector",
+           "star": 3
+         },
+         {
+           "id": 4,
+           "desc": "Successful. Occult Science, any business",
+           "star": 4
+         },
+         {
+           "id": 5,
+           "desc": "Occult, Sitting jobs (Sales, marketing, Graphic design)",
+           "star": 3
+         },
+         {
+           "id": 6,
+           "desc": "Sports, Occult Science, Healing",
+           "star": 4
+         },
+         {
+           "id": 7,
+           "desc": "Higher disappointment from self & others, marriage problem, may have extra marital affair. Occult Science",
+           "star": 1.5
+         },
+         {
+           "id": 8,
+           "desc": "Teaching & Occult science",
+           "star": 1
+         },
+         {
+           "id": 9,
+           "desc": "Teaching, Occult, Healing science",
+           "star": 1
+         }
+       ]
+     },
+     {
+       "8": [
+         {
+           "id": 1,
+           "desc": "Struggle. Problem in marriage (female). Law & business related sector",
+           "star": "NA"
+         },
+         {
+           "id": 2,
+           "desc": "Struggle. Health issues. Law related sector",
+           "star": "NA"
+         },
+         {
+           "id": 3,
+           "desc": "Teaching, Healing, Law, printing press related sector",
+           "star": 2
+         },
+         {
+           "id": 4,
+           "desc": "Struggle in Life. Law, Business, Sales & Marketing",
+           "star": 2
+         },
+         {
+           "id": 5,
+           "desc": "Law, properties, real estate",
+           "star": 3
+         },
+         {
+           "id": 6,
+           "desc": "Law and media",
+           "star": 3
+         },
+         {
+           "id": 7,
+           "desc": "Occult Science, teaching & education sector",
+           "star": 2.5
+         },
+         {
+           "id": 8,
+           "desc": "Struggle. Good in Sports, Shoe business. It will demand more laborious work & that will also provide good success",
+           "star": 1.5
+         },
+         {
+           "id": 9,
+           "desc": "Delayed success. May face struggle. Army/law sector",
+           "star": 1.5
+         }
+       ]
+     },
+     {
+       "9": [
+         {
+           "id": 1,
+           "desc": "Successful. Army, Police or any humanitarian services",
+           "star": 4
+         },
+         {
+           "id": 2,
+           "desc": "May face problem in married life. Army, Police, Shipping, liquid related & Logistics",
+           "star": 2
+         },
+         {
+           "id": 3,
+           "desc": "Teaching, Healing, Admin, Army, & Occult Science related work",
+           "star": 2.5
+         },
+         {
+           "id": 4,
+           "desc": "Struggle. May face health problem, Surgeries. Any humanitarian services are good for them",
+           "star": 1.5
+         },
+         {
+           "id": 5,
+           "desc": "Successful. Banking sector will give good growth in life",
+           "star": 3
+         },
+         {
+           "id": 6,
+           "desc": "Life full of Scandals / controversies, may face marriage problem. May get success in Luxury, glamour, Army and Police",
+           "star": 2.5
+         },
+         {
+           "id": 7,
+           "desc": "Teaching, Preaching, Occult science",
+           "star": 1
+         },
+         {
+           "id": 8,
+           "desc": "Law, Army, Police sector",
+           "star": 2
+         },
+         {
+           "id": 9,
+           "desc": "Misfit number, may face marriage life problem. Army, police, Navy related sector",
+           "star": 1.5
+         }
+       ]
+     }
+   ]
+ }
