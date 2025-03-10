@@ -11,7 +11,7 @@ function App() {
     <>
 
       <nav className="navbar navbar-expand-sm bg-success navbar-dark text-center">
-        <h5 className="app-header  ">NKBH Futurologyz</h5>
+        <h5 className="app-header">NKBH Tekmindz</h5>
       </nav>
       <br />
 

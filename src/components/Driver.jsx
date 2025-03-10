@@ -257,7 +257,7 @@ const Driver = () => {
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed text-bg-success"
+                className="accordion-button collapsed text-bg-success"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"

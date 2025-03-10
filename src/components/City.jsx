@@ -39,61 +39,73 @@ const City = () => {
         '7': 7,
         '8': 8,
         '9': 9,
-
-
     }
+
     const cityRef = useRef();
     const [cityCount, setCityCount] = useState();
     const [city, setCity] = useState();
     const [citySum, setCitySum] = useState();
+    const [vowelCount, setVowelCount] = useState(0);  // New state for vowel count
+    const [vowelSum, setVowelSum] = useState(0);  // New state for vowel sum
+    const [consonantCount, setConsonantCount] = useState(0);  // New state for consonant count
+    const [consonantSum, setConsonantSum] = useState(0);  // New state for consonant sum
 
-    const cityChangeHandler = () => {
-        //s console.log(cityRef.current.value);
-
-    }
+    const vowels = ['A', 'E', 'I', 'O', 'U'];  // Define vowel characters
 
     const sumCity = (city) => {
+        let sum = 0;
+        let vowelSum = 0;
+        let consonantSum = 0;
+        let vowelChars = '';  // String to store vowel characters
+        let consonantChars = '';  // String to store consonant characters
 
-        let sum = 0
         for (let char of city) {
-            // console.log(cityObj[char.toUpperCase()])
-            sum += cityObj[char.toUpperCase()]
+            const value = cityObj[char.toUpperCase()];
+
+            sum += value;
+
+            if (vowels.includes(char.toUpperCase())) {
+                vowelSum += value;
+                vowelChars += char;  // Append vowel to string
+            } else if (/[A-Z]/.test(char.toUpperCase())) {  // Check for consonants
+                consonantSum += value;
+                consonantChars += char;  // Append consonant to string
+            }
         }
 
-        return sum;
+        // Update states for vowel and consonant sums and characters
+        setVowelCount(vowelSum);
+        setVowelSum(digital_root(vowelSum));
+        setConsonantCount(consonantSum);
+        setConsonantSum(digital_root(consonantSum));
 
+        return sum;
     }
 
     const digital_root = (n) => {
-        // Base case: if the number is less than 10, return the number
         if (n < 10) {
             return n;
         }
 
-        // Convert the number to a string to extract individual digits
         let digits = n.toString().split('').map(Number);
-
-        // Calculate the sum of the digits
         let sum = digits.reduce((acc, curr) => acc + curr, 0);
 
-        // Recursively call digital_root with the sum until it's a single-digit number
         return digital_root(sum);
     }
+
     const onSubmitHandler = (e) => {
         e.preventDefault();
         let cityStr = (cityRef.current.value).replace(/[^a-zA-Z0-9]/g, '');
-        setCity(cityStr)
+        setCity(cityStr);
     }
 
     useEffect(() => {
         city && setCityCount(sumCity(city));
-    }, [city])
-
+    }, [city]);
 
     useEffect(() => {
-        cityCount && setCitySum(digital_root(cityCount))
-    }, [cityCount])
-
+        cityCount && setCitySum(digital_root(cityCount));
+    }, [cityCount]);
 
     return (
         <div className="container">
@@ -104,7 +116,13 @@ const City = () => {
                 </div>
                 <button className="btn btn-success" type="submit">Submit</button>
             </form>
-            {city && <h3> {city} : {cityCount} : {citySum}</h3>}
+            <p>{city && <h3>Full Name : {city} : {cityCount} : {citySum}</h3>}</p>
+
+            {/* Vowel information */}
+            <p>{city && <h3>Mental Plane : {vowelCount} : {vowelSum}</h3>}</p>
+
+            {/* Consonant information */}
+            <p>{city && <h3>Personality Plane : {consonantCount} : {consonantSum}</h3>}</p>
         </div>
     )
 }
